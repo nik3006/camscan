@@ -1,0 +1,62 @@
+/* 🔹 Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, #24292e, #1b1f23);
+  padding: 14px 32px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* 🔹 Logo */
+.logo {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.logo:hover {
+  color: #61dafb;
+}
+
+/* 🔹 Nav Links */
+.nav-links a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #e5e7eb;
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.25s ease, transform 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #61dafb;
+  transform: translateY(-2px);
+}
+
+/* 🔹 Logout Button */
+.logout-btn {
+  background: linear-gradient(135deg, #e63946, #d62828);
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 15px;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 10px rgba(230,57,70,0.25);
+}
+
+.logout-btn:hover {
+  background: linear-gradient(135deg, #d62828, #b91c1c);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(230,57,70,0.35);
+}

@@ -1,0 +1,53 @@
+/* 📦 Gallery Container */
+.gallery-container {
+  padding: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #f9fafb;
+  border-radius: 16px;
+}
+
+/* 🖼️ Gallery Grid */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+/* 🎨 Gallery Item */
+.gallery-item {
+  background: #ffffff;
+  padding: 18px;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.gallery-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
+}
+
+/* 🖼️ Image Row */
+.gallery-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+/* 📸 Individual Images */
+.gallery-images img {
+  width: 120px;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: pointer;
+}
+
+.gallery-images img:hover {
+  transform: scale(1.07);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}

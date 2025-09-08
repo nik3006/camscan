@@ -1,0 +1,116 @@
+/* 🌐 Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  background-color: #f3f4f6;
+  color: #1f2937;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 📦 App Container */
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px;
+}
+
+/* 🧭 Header */
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+  padding: 16px 24px;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.app-header h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #111827;
+}
+
+/* 🎨 Buttons */
+button {
+  background: linear-gradient(135deg, #4f46e5, #3b82f6);
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+button:hover {
+  background: linear-gradient(135deg, #4338ca, #2563eb);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+/* 📝 Input Fields */
+input[type="file"],
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  display: block;
+  padding: 12px 14px;
+  margin: 12px 0;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  font-size: 15px;
+  background-color: #fff;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+input[type="file"]:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.15);
+  outline: none;
+}
+
+/* 🖼️ Preview Section */
+.preview-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.preview-section img,
+.preview-section canvas {
+  max-width: 280px;
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.preview-section img:hover,
+.preview-section canvas:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .app-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+
+  .preview-section {
+    justify-content: center;
+  }
+}

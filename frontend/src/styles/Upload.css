@@ -1,0 +1,91 @@
+/* 📦 Upload Container */
+.upload-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px;
+  background: #f9fafb;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  max-width: 700px;
+  margin: 40px auto;
+}
+
+/* 📝 Upload Form */
+.upload-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+/* 📂 File Input */
+input[type="file"] {
+  display: block;
+  padding: 12px;
+  margin-bottom: 16px;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  background-color: #fff;
+  cursor: pointer;
+  transition: border 0.25s ease, box-shadow 0.25s ease;
+}
+
+input[type="file"]:hover {
+  border-color: #3b82f6;
+}
+
+input[type="file"]:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.15);
+  outline: none;
+}
+
+/* 🎨 Upload Button */
+button {
+  background: linear-gradient(135deg, #4f46e5, #3b82f6);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 15px;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+button:hover {
+  background: linear-gradient(135deg, #4338ca, #2563eb);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.18);
+}
+
+/* 🖼️ Preview Section */
+.preview-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 24px;
+  width: 100%;
+}
+
+/* 🖼️ Image & Canvas Previews */
+.preview-section img,
+.preview-section canvas {
+  max-width: 300px;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.preview-section img:hover,
+.preview-section canvas:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
